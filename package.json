@@ -1,0 +1,55 @@
+{
+  "name": "coinmarketcap-api-cryptoscan",
+  "version": "1.0.0",
+  "description": "A real-time cryptocurrency price and information tracker for both centralized and decentralized exchanges.",
+  "main": "index.ts",
+  "scripts": {
+    "start": "node dist/index.js",
+    "start:debug": "nodemon --watch src --exec ts-node src/index.ts",
+    "build": "tsc",
+    "test": "echo \"No test specified\" && exit 1"
+  },
+  "keywords": [
+    "coinmarketcap",
+    "cryptocurrency",
+    "api",
+    "real-time",
+    "cex",
+    "dex",
+    "price-tracker",
+    "websocket",
+    "rest-api"
+  ],
+  "author": "Cryptoscan Team",
+  "license": "ISC",
+  "homepage": "https://t.me/dan_cryptoscan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cryptoscan-pro/coinmarketcap-api-public"
+  },
+  "bugs": {
+    "url": "https://github.com/cryptoscan-pro/coinmarketcap-api-public/issues"
+  },
+  "dependencies": {
+    "@javeoff/proxy-fetch": "^1.0.0",
+    "@javeoff/file-map": "^2.3.0",
+    "bottleneck": "^2.19.5",
+    "groupby-esm": "^1.1.0",
+    "hono": "^3.1.0",
+    "jsdom": "^22.1.0",
+    "p-queue": "^7.3.0",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.0",
+    "ts-node": "^10.9.1",
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://t.me/dan_cryptoscan"
+  }
+}
